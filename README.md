@@ -9,6 +9,10 @@ Converts to/from:
 - Fractional odds
 - Implied probability
 
+## Installation
+
+`pip install betting`
+
 ## Functions
 
 - `american_odds_to_decimal_odds(american_odds: float) -> float`
@@ -23,3 +27,11 @@ Converts to/from:
 - `probability_to_american_odds(p: float) -> float`
 - `probability_to_decimal_odds(p: float) -> float`
 - `probability_to_fractional_odds(p: float) -> Tuple[float, float]`
+
+## Usage
+
+```
+from betting import convert
+
+print(f"The implied probability for decimal odds of 3 is {decimal_odds_to_probability(3.)}")
+```
